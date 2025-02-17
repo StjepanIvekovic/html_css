@@ -1,4 +1,4 @@
 Ovo je moj kalkulator.
 On moze:
 - zbrajat
--oduzimat
+- mnozenje
