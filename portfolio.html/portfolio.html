@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="styles.css" />
+   
+  </head>
+
+  <style>
+    * {
+    margin: 0; 
+}
+
+body {
+    text-align: center; 
+    font-family: sans-serif; 
+    background-color: var(--beige);
+}
+:root {
+    --beige: #f4e1d2; 
+    --base-close:#92a8d1;
+    --similar-base: #55ACEE;
+    --brown: #b9936c;
+}
+#navbar {
+    display: flex; 
+    justify-content: right; 
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    background-color: var(--beige);
+    font-size: 25px;
+    padding: 20px 0; 
+    border-bottom: 1px solid var(--base-close);
+}
+.nav-link {
+    list-style: none; 
+    display: flex; 
+    font-family: sans-serif; 
+    padding: 15px 0;  
+}
+.nav-link a {
+    text-decoration: none;
+    color: var(--base-close); 
+    padding: 0 10px; 
+}
+.nav-link a:hover {
+    text-decoration: underline; 
+}
+
+section {
+    min-height: 100vh; 
+    padding: 100px 0; 
+}
+
+#welcome-section {
+    display: flex; 
+    flex-direction: column; 
+    background-color: var(--beige);
+    color: var(--base-close);
+}
+
+h1 {
+    font-size: 60px; 
+    font-family: sans-serif; 
+}
+
+#welcome-section h1 {
+    margin-top: 40vh; 
+}
+#welcome-section p {
+ color: var(--similar-base); 
+ margin: 20px 0;
+ font-size: 25px; 
+ font-family: italic;  
+
+ }
+
+ #projects .project-tile img {
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+}
+
+#projects .project-tile{
+    height: 550px; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    background-color: var(--beige);
+    color: var(--brown);
+    box-shadow: 10px 10px 10px 10px rgba(100, 100, 100, 0.5);
+    border-radius: 10px; 
+    text-decoration: none; 
+}
+
+#projects .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; 
+    padding: 20px; 
+    place-items: center; 
+    max-width: 1200px;
+    margin: auto;  
+}
+
+#projects {
+    background-color: var(--beige);
+}
+#projects h1 {
+    border-bottom: 2px solid var(--base-close); 
+    width: fit-content; 
+    margin: auto; 
+}
+
+#projects .project-tile p {
+    font-size: 25px; 
+    padding: 10px; 
+}
+    </style>
+    <body>
+        <header>
+          <nav id="navbar">
+            <ul class="nav-link">
+              <li><a href="#welcome-section" class="nav-link">Welcome</a></li> 
+              <li><a href="#projects" class="nav-link">Projects</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>  
+            </ul>
+          </nav>
+        </header>
+          <section id="welcome-section">
+            <h1>Hey, I am Stjepan</h1>
+            <p>web developer</p>
+          </section>
+        <section id="projects">   
+            <h1>Check out some of my projects!</h1>   
+            <div class="projects">    
+                <a href="#" class="project-tile">
+                    <img src="./skyline.png" alt="city-skyline">
+                <p>City skyline</p>
+                    </a>
+                    <a href="#" class="project-tile">
+                    <img src="./balance.png" alt="balance-sheet">
+                    <p>Balance sheet</p>
+                    </a>
+                    <a href="#" class="project-tile">
+                    <img src="./penguin.png" alt="penguin">
+                    <p>Cute penguin</p>
+                    </a>
+                    <a href="#" class="project-tile">
+                    <img src="./piano.png" alt="piano">
+                    <p>Piano</p>
+                    </a>
+                    <a href="#" class="project-tile">
+                    <img src="./quiz.png" alt="quiz">
+                    <p>Quiz</p>
+                    </a>
+                    <a href="#" class="project-tile">
+                    <img src="./cat.png" alt="cat">
+                    <p>Adorable cat</p>
+                    </a>
+            </div>  
+
+                    </section>
+                </body>
+            </html>
