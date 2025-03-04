@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <style>
+         body {
+  background-color: lightblue;
+  text-align: center;
+  font-size: 25px;
+}
+
+#survey-form {
+  text-align: left;
+  width: 500px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+#title {
+  font-size: 50px;
+  font-family: Verdana, sans-serif;
+  background-color: #80ced6;
+  width: max-content;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#description {
+  font-size: 35px;
+  font-family: Brush Script MT, Verdana;
+  border-bottom: 2px solid #563f46;
+}
+
+#dropdown:hover {
+  background-color: #c6bcb6;
+}
+
+.group-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.group-form label {
+  flex-grow: 1;
+}
+
+.group-form input, #dropdown {
+  margin-left: 10px;
+}
+
+
+
+.questions {
+  text-align: left;
+  margin: 0 auto;
+  width: 500px;
+  padding: 3px;
+}
+
+.questions div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.questions > div:first-child,
+.questions > div:not(:has(input)) {
+  font-weight: bold;
+}
+
+.questions label {
+  flex-grow: 1;
+}
+
+.questions input {
+  margin-left: 10px;
+}
+input[type="reset"] {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+} 
+input[type="submit"] {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+    
+          </style>
+      <body>
+         <h1 id=title> Exercise Survey Form </h1>
+         <p id="description"> Train every day</p>
+         <form id="survey-form">
+         <div class="group-form">
+           <label id="name-label">Name:</label>
+           <input id="name" type="text" placeholder="Marco" required><br>
+         </div> 
+         <div class="group-form">
+           <label id="lname-label">Last name:</label>
+           <input id="lname" type="text" placeholder="Polo" required><br>
+        </div>
+        <div class="group-form">
+           <label id="email-label">E-mail: </label>
+           <input id="email" type="email" placeholder="marcopolo@gmail.com" required><br> 
+        </div>
+        <div class="group-form">
+             <label id="number-label">How old are you?</label>
+            <input id="number" type="number" min="10" max="90" placeholder="15"><br>
+        </div>
+
+         <label>How many times a day do you train?</label>
+             <select id="dropdown">   
+               <option id="null">0</option>
+               <option id="one">1</option>
+               <option id="two">2</option>
+               <option id="three">3</option>              
+               </select><br>
+            
+ 
+ 
+               <label>Gender:</label>
+               <label>Male</label>
+               <input type="radio" value="male" name="title">
+               <label>Female</label>
+               <input type="radio" value="female" name="title"><br>
+ 
+               <label>Do you give your best at exercise?</label>
+ 
+               <label>Yes</label>
+               <input type="checkbox" value="yes" name="yes">
+ 
+               <label>No</label>
+               <input type="checkbox" value="no" name="no"><br>
+               <section class="questions">
+                <div>
+                <label>How long have you been training?</label>
+                </div>
+            <div>
+                <label for="start">I have just started</label>
+                <input id="start" type="radio" name="training" value="start">
+            </div>
+            <div>
+                <label for="few-months">I have been training for a few months</label>
+                <input id="few-months" type="radio" name="training" value="few-months">
+            </div>
+            <div>
+                <label for="few-years">I have been training for few years</label>
+                <input id="few-years" type="radio" name="training" value="few-years">
+            </div>
+    
+    
+           <div>
+                <label>What time of day do you like training at?</label>
+           </div>
+                <div>
+                    <label for="morning">In the morning</label>
+                    <input id="morning" type="radio" name="time-of-day" value="time">
+                </div>
+                <div>
+                    <label for="afternoon">In the afternoon</label>
+                    <input id="afternoon" type="radio" name="time-of-day" value="time">
+                </div>
+                <div>
+                    <label for="night">In the night</label>
+                    <input id="night" type="radio" name="time-of-day" value="time">
+                </div>
+                <div>
+                 <label>What type of equipment do you use?</label>
+                </div>
+                <div>
+                    <label for="machines">I use machines</label>
+                    <input id="machines" type="radio" name="machines" value="help">
+                </div>
+                <div>
+                    <label for="body">I only train with my body</label>
+                    <input id="body" type="radio" name="machines" value="body">
+                </div>
+                <div>
+                    <label for="dummbells">I use dummbells</label>
+                    <input id="dummbells" type="radio" name="machines" value="dummbells">
+                </div>
+              </section>
+ 
+               <label for="comment">Comment:</label> 
+               <textarea id="comment" rows="3" cols="25">
+ 
+               </textarea><br>
+ 
+               <div class="reset-button">
+               <input id="reset" type="reset"><br> 
+               </div>
+               <div class="submit-button">
+               <input id="submit" type="submit">
+               </div> 
+          </form>
+          
+          
+ 
+       </body>
+       
+     </html>
+   
+ 
+
