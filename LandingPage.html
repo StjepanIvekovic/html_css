@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Landing Page</title>
+</head>
+<style>
+    :root {
+        --grey: #d6cbd3; 
+        --orange: #f18973; 
+        --brown: #f18973; 
+    }
+    * {
+        margin: 0; 
+        padding: 0;
+        box-sizing: border-box; 
+    }
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #header-img {
+        width: 200px;
+        object-fit: contain;
+    }
+    #header {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: white;
+    z-index: 1; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .logo-container {
+        display: flex; 
+        align-items: center; 
+    }
+    .nav-links {
+        display: flex;  
+        list-style-type: none; 
+        gap: 30px;  
+        font-size: 1.5rem;
+        color: var(--orange); 
+    } 
+    .truck-kings {
+        color: var(--orange);
+        font-size: 1.5rem; 
+    }
+    .nav-links a {
+        color: var(--orange); 
+        text-decoration: none; 
+        padding: 10px 20px; 
+    }
+    .nav-links a:hover {
+        text-decoration: underline; 
+        color: var(--orange); 
+    }
+    .start {
+        font-size: 25px; 
+        text-align: center; 
+        padding: 10px; 
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+        margin-bottom: 2px; 
+    }
+    #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+        gap: 15px; 
+    }
+    #submit {
+        background-color: var(--brown); 
+        font-size: 18px; 
+        width: 5em; 
+        cursor: pointer; 
+    }
+    #email {
+        width: 15em; 
+    }
+    input {
+        border-radius: 5px; 
+        border: 1px solid var(--orange); 
+    }
+    .icon {
+        color: var(--orange); 
+    }
+
+    .info {
+        display: flex; 
+        align-items: center;
+        justify-content: flex-start; 
+        gap: 20px; 
+        margin-bottom: 30px;
+        width: 20%; 
+        margin-left: auto; 
+        margin-right: auto;
+        margin-top: 60px;  
+    }
+    
+    .info div {
+        max-width: 500px; 
+    }
+    .info h2 {
+        font-size: 25px;
+    }
+    .info p {
+        font-size: 15px; 
+    }
+    #about {
+        margin-top: 100px; 
+    }
+    #audio {
+        display: flex;          
+        justify-content: center; 
+        align-items: center;    
+        height: 35vh;         
+        margin-top: 40px;
+    }
+    .tables {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.price {
+    border: 2px solid var(--orange); 
+    padding: 20px; 
+    width: 250px; 
+    text-align: center; 
+    background-color: var(--grey); 
+    height: 15vh; 
+    border-radius: 10px; 
+    
+}
+
+.price h3 {
+    margin: 0; 
+    color: var(--orange); 
+    border-bottom: 2px solid var(--orange); 
+}
+.dollars {
+    margin-top: 10px;
+    font-size: 25px;  
+}
+.quote {
+    margin-top : 25px; 
+    font-family: Verdana, sans-serif; 
+}
+footer {
+    text-align: right; 
+}
+@media only screen and (min-width: 600px;) {
+    #nav-bar {
+        flex-direction: row; 
+    }
+}
+</style>
+<body>
+    <header id="header">
+        <div class="logo-container">
+            <img src="https://www.logoground.com/uploads7/dv7y2020356152020-02-222559869TRUCK%20Logo.jpg" id="header-img" alt="truck-logo">
+            <span class="truck-kings">Truck Kings</span>
+        </div>
+        <nav id="nav-bar">  
+            <ul class="nav-links">
+                
+                <li><a href="#about" class="nav-link">About us</a></li>  
+                <li><a href="#apply" class="nav-link">How to apply</a></li> 
+                <li><a href="#pricing" class="nav-link">Pricing</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="email-section">
+        <h2 class="start">Start your journey with us!</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" name="email" required placeholder="stjepan.ivekovic@gmail.com">
+            <input id="submit" type="submit">
+        </form>
+    </section>
+
+    
+    <section id="about">
+        <div class="info">
+            <i class="ri-home-2-fill ri-4x icon"></i>
+            <div>    
+                <h2>Where do we come from and do business</h2>
+                <p>We started doing transport service on 04.05.2007, and we were just a small company that started with one truck. We are stationed in Zagreb, Croatia and we offer our service all over Europe.</p>
+            </div>
+        </div>
+
+        <div class="info">
+            <i class="ri-truck-line ri-4x icon"></i>
+            <div>
+                <h2>Do not worry!</h2>
+                <p>Enter your e-mail address, press the submit button, and follow the next few steps!</p>
+            </div>
+        </div>
+
+        <div class="info">
+            <i class="ri-calculator-line ri-4x icon"></i>
+            <div>
+                <h2>Cost of our service</h2>
+                <p>The cost can be seen below!</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="apply">
+        <div class="info">
+            <i class="ri-pen-line ri-4x icon"></i>
+            <div>
+                <h2>How to apply</h2>
+                <p>Fill out the form on this page, and our team will get back to you shortly!</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="pricing">
+        <div class="info">
+            <i class="ri-money-dollar-circle-line ri-4x icon"></i>
+            <div>
+                <h2>Pricing</h2>
+                <p>We offer affordable rates that suit all your transport needs. Please contact us for specific pricing details.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="audio">
+        <iframe id="video" width="480" height="315" src="https://www.youtube.com/embed/z5CSsF0bLB0?si=vlcZfRmnejlU3tWz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section class="tables">
+        <div class="price">
+            <h3>0-500 kilometars</h3>
+            <p class="dollars">700$</p>
+            <p class="quote">"Trust once once and you will forever"</p>
+        </div>
+        <div class="price">
+           <h3>500-1000 kilometars</h3> 
+           <p class="dollars">1200$</p>
+           <p class="quote">"You will always get the best service"</p>
+           
+        </div>
+        <div class="price">
+            <h3>Over 1000 kilometars</h3>
+            <p class="dollars">1500 + 0.3$ per kilometar</p>
+            <p class="quote">"There is nowhere better"</p>
+        </div>
+    </section>
+    <footer>
+        <h4>Truck Kings Copyright, 2007.</h4>
+    </footer>
+</body>
+</html>
